@@ -50,7 +50,7 @@ public class Canvas
         frame.setTitle(title);
         frame.setLocation(30, 30);
         canvas.setPreferredSize(new Dimension(width, height));
-        backgroundColor = Color.black;
+        backgroundColor = Color.white;
         frame.pack();
         objects = new ArrayList<Object>();
         shapes = new HashMap<Object, ShapeDescription>();
@@ -112,8 +112,11 @@ public class Canvas
      */
     public void setForegroundColor(String colorString)
     {
-        if(colorString.equals("blue-grey")) {
-            graphic.setColor(new Color(118, 144, 165));
+        if(colorString.equals("grey-blue")) {
+            graphic.setColor(new Color(121, 148, 169));
+        }
+        else if(colorString.equals("grey")) {
+            graphic.setColor(new Color(49, 49, 65));
         }
         else if(colorString.equals("black")) {
             graphic.setColor(Color.black);

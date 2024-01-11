@@ -18,6 +18,8 @@ public class Picture
     private Square brick3;
     private Square brick4;
     private Square brick5;
+    private Square door1;
+    private Square door2;
     private Triangle upperRoof;
     private Triangle lowerRoof;
     private Circle sun;
@@ -51,8 +53,13 @@ public class Picture
         brick4 = new Square();
         brick5 = new Square();
 
+        door1 = new Square();
+        door2 = new Square();
+
         upperRoof = new Triangle();
         lowerRoof = new Triangle();
+
+
         sun = new Circle();
         drawn = false;
     }
@@ -68,19 +75,19 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            wall1.changeColor("blue-grey");
+            wall1.changeColor("grey-blue");
             wall1.moveHorizontal(-140);
             wall1.moveVertical(-40);
             wall1.changeSize(200, 300);
             wall1.makeVisible();
 
-            lowerFloor1.changeColor("blue-grey");
+            lowerFloor1.changeColor("grey-blue");
             lowerFloor1.moveHorizontal(-240);
             lowerFloor1.moveVertical(60);
             lowerFloor1.changeSize(100, 300);
             lowerFloor1.makeVisible();
 
-            lowerFloor2.changeColor("blue-grey");
+            lowerFloor2.changeColor("grey-blue");
             lowerFloor2.moveHorizontal(0);
             lowerFloor2.moveVertical(60);
             lowerFloor2.changeSize(100, 300);
@@ -110,25 +117,25 @@ public class Picture
             lowerRoof.moveVertical(-55);
             lowerRoof.makeVisible();
 
-            secondFloor1.changeColor("blue-grey");
+            secondFloor1.changeColor("grey-blue");
             secondFloor1.moveHorizontal(-100);
             secondFloor1.moveVertical(-40);
             secondFloor1.changeSize(50, 50);
             secondFloor1.makeVisible();
 
-            secondFloor2.changeColor("blue-grey");
+            secondFloor2.changeColor("grey-blue");
             secondFloor2.moveHorizontal(-150);
             secondFloor2.moveVertical(-40);
             secondFloor2.changeSize(50, 50);
             secondFloor2.makeVisible();
 
-            secondFloor3.changeColor("blue-grey");
+            secondFloor3.changeColor("grey-blue");
             secondFloor3.moveHorizontal(-50);
             secondFloor3.moveVertical(-40);
             secondFloor3.changeSize(50, 50);
             secondFloor3.makeVisible();
 
-            secondFloor4.changeColor("blue-grey");
+            secondFloor4.changeColor("grey-blue");
             secondFloor4.moveHorizontal(-30);
             secondFloor4.moveVertical(-40);
             secondFloor4.changeSize(50, 50);
@@ -187,6 +194,20 @@ public class Picture
             brick5.moveVertical(135);
             brick5.changeSize(25, 180);
             brick5.makeVisible();
+
+            door1.changeColor("white");
+            door1.moveHorizontal(0);
+            door1.moveVertical(135);
+            door1.changeSize(25, 180);
+            door1.makeVisible();
+
+            door2.changeColor("white");
+            door2.moveHorizontal(0);
+            door2.moveVertical(110);
+            door2.changeSize(25, 180);
+            door2.makeVisible();
+
+
 /*
             sun.changeColor("brown");
             sun.moveHorizontal(100);
