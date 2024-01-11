@@ -50,7 +50,7 @@ public class Canvas
         frame.setTitle(title);
         frame.setLocation(30, 30);
         canvas.setPreferredSize(new Dimension(width, height));
-        backgroundColor = bgColor;
+        backgroundColor = Color.black;
         frame.pack();
         objects = new ArrayList<Object>();
         shapes = new HashMap<Object, ShapeDescription>();
@@ -112,17 +112,26 @@ public class Canvas
      */
     public void setForegroundColor(String colorString)
     {
-        if(colorString.equals("red")) {
-            graphic.setColor(new Color(235, 25, 25));
+        if(colorString.equals("blue-grey")) {
+            graphic.setColor(new Color(118, 144, 165));
         }
         else if(colorString.equals("black")) {
             graphic.setColor(Color.black);
         }
-        else if(colorString.equals("blue")) {
-            graphic.setColor(new Color(30, 75, 220));
+        else if(colorString.equals("brick")) {
+            graphic.setColor(new Color(87, 9, 9));
         }
-        else if(colorString.equals("yellow")) {
-            graphic.setColor(new Color(255, 230, 0));
+        else if(colorString.equals("blue")) {
+            graphic.setColor(new Color(165, 171, 206));
+        }
+        else if(colorString.equals("clear")) {
+            graphic.setColor(new Color(162, 239, 243));
+        }
+        else if(colorString.equals("brown")) {
+            graphic.setColor(new Color(110, 52, 3));
+        }
+        else if(colorString.equals("brown-grey")) {
+            graphic.setColor(new Color(112, 92, 75));
         }
         else if(colorString.equals("green")) {
             graphic.setColor(new Color(80, 160, 60));
