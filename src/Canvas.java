@@ -50,7 +50,7 @@ public class Canvas
         frame.setTitle(title);
         frame.setLocation(30, 30);
         canvas.setPreferredSize(new Dimension(width, height));
-        backgroundColor = Color.white;
+        backgroundColor = Color.cyan;
         frame.pack();
         objects = new ArrayList<Object>();
         shapes = new HashMap<Object, ShapeDescription>();
@@ -130,14 +130,20 @@ public class Canvas
         else if(colorString.equals("clear")) {
             graphic.setColor(new Color(162, 239, 243));
         }
+        else if(colorString.equals("cyan")) {
+            graphic.setColor(new Color(23, 211, 227));
+        }
         else if(colorString.equals("brown")) {
-            graphic.setColor(new Color(110, 52, 3));
+            graphic.setColor(new Color(59, 28, 2));
         }
         else if(colorString.equals("brown-grey")) {
             graphic.setColor(new Color(112, 92, 75));
         }
+        else if(colorString.equals("light brown")) {
+            graphic.setColor(new Color(110, 83, 67));
+        }
         else if(colorString.equals("green")) {
-            graphic.setColor(new Color(80, 160, 60));
+            graphic.setColor(new Color(47, 105, 34));
         }
         else if(colorString.equals("magenta")) {
             graphic.setColor(Color.magenta);
